@@ -1,0 +1,20 @@
+/* style for my search bar component */
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.searchInput {
+  width: 250px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 150px;
+  font-size: 13px;
+}
+.searchInput:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+

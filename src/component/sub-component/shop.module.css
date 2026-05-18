@@ -1,0 +1,40 @@
+/* styling our shop component */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.shopContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 94vh;
+}
+
+.sideBar {
+    width: 15%;
+    background-color: #4a90e2;
+    padding: 10px;
+}
+
+.sideBar p {
+    color: white;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.productList {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    background-color: #f4f4f4;
+}

@@ -1,0 +1,43 @@
+/* styling for the home page of the coffee store application. It defines the layout and appearance of the home page, including the title and description. The styles are responsive, ensuring that the page looks good on different screen sizes. */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.homeContainer {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 2rem;
+    
+}
+
+.homeTitle {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    margin: 0 0 1rem;
+}
+
+.homeDescription {
+    font-size: 1.2rem;
+    max-width: 720px;
+    margin: 0;
+    line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+    .homeContainer {
+        padding: 3rem 1.25rem;
+    }
+
+    .homeTitle {
+        font-size: 2.75rem;
+    }
+
+    .homeDescription {
+        font-size: 1rem;
+    }
+}

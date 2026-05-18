@@ -1,0 +1,70 @@
+/* Navbar Styles */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Navigation list container */
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 20rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual nav item spacing */
+.navLinks li {
+  margin: 0;
+}
+
+.navLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navLinks a:hover {
+  color: #ddd;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .navLinks li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.75rem;
+  }
+
+  .navLinks {
+    gap: 0.5rem;
+  }
+
+  .navLinks a {
+    font-size: 0.95rem;
+  }
+}
